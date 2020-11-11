@@ -20,7 +20,7 @@ jobs:
       - name: Mods
         run: |
           mkdir R2S-Minimal-$(date +%Y-%m-%d)-test
-          zip -r R2S-Minimal-$(date +%Y-%m-%d)-test.zip R2S-Minimal-$(date +%Y-%m-%d)-test
+          zip -r artifact.zip R2S-Minimal-$(date +%Y-%m-%d)-test
       - name: Assemble Artifact
         id: assemble_artifact
         run: |
