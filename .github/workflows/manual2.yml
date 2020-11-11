@@ -28,6 +28,7 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: |
+        cd /
         mkdir test
         zip -r test.zip test
     - name: Create Release
@@ -47,6 +48,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.sec_token }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps
-        asset_path: ./test.zip
+        asset_path: /test.zip
         asset_name: ${{ steps.assemble_artifact.outputs.release_tag }}-ROM.zip
         asset_content_type: application/zip
