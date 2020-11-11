@@ -27,7 +27,7 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Send greeting
-      run: 
+      run: |
         mkdir test
         zip -r test.zip test
     - name: Create Release
