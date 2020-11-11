@@ -8,7 +8,7 @@
 
 ### 发布地址：
 
-https://github.com/15733181556/nanopi-openwrt/releases  
+https://github.com/onlypeng/nanopi-openwrt/releases  
 (请记得下载zip包之后解压出里头的固件包再刷，不要拿zip直刷，会失败的！)
 
 ### 编译方式：
