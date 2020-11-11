@@ -1,8 +1,14 @@
 ## Nanopi r1s r2s openwrt 固件自动编译
 
+### 与原版比较：
+仅有R2S-Minimal版。  
+增加了docker插件。  
+可以由原版平滑升级，亦可以平滑升级至原版。  
+原版地址：https://github.com/klever1988/nanopi-openwrt
+
 ### 发布地址：
 
-https://github.com/klever1988/nanopi-openwrt/releases  
+https://github.com/15733181556/nanopi-openwrt/releases  
 (请记得下载zip包之后解压出里头的固件包再刷，不要拿zip直刷，会失败的！)
 
 ### 编译方式：
@@ -18,7 +24,7 @@ Lienol版默认用户名是root, 密码为空
 
 ### 更新说明：
 
-https://github.com/klever1988/nanopi-openwrt/blob/master/CHANGELOG.md
+https://github.com/15733181556/nanopi-openwrt/blob/master/CHANGELOG.md
 
 ### R2S在线升级方法:
 (注意:目前仅支持R2S，仅能升级到minimal版本固件，如果你使用的是Lienol版也不要用此方法升级)  
@@ -30,7 +36,7 @@ opkg install libzstd
 ```
 然后下载脚本执行
 ```bash
-wget -qO- https://github.com/klever1988/nanopi-openwrt/raw/master/scripts/autoupdate.sh | sh
+wget -qO- https://github.com/15733181556/nanopi-openwrt/raw/master/scripts/autoupdate.sh | sh
 ```
 (脚本由gary lau提供，非常感谢！)
 
