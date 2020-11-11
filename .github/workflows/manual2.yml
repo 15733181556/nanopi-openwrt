@@ -27,7 +27,9 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Send greeting
-      run: echo "Hello ${{ github.event.inputs.name }}"
+      run: 
+        mkdir test
+        zip -r test.zip test
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
