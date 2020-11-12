@@ -27,4 +27,8 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: Send greeting
-      run: echo "Hello ${{ github.event.inputs.name }}"
+      run: |
+        apt update
+        apt install -y subversion
+        svn co https://github.com/lisaac/luci-app-dockerman/tree/master/applications/luci-app-dockerman
+        echo "测试完成"
