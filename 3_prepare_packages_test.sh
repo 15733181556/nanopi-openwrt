@@ -18,8 +18,8 @@ rm -rf openwrt-chinadns-ng/ && git clone https://github.com/pexcn/openwrt-chinad
 rm -rf v2ray/ && svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/v2ray
 rm -rf v2ray-plugin/ && svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/v2ray-plugin
 rm -rf trojan/ && svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/trojan
-rm -rf luci-lib-docker/ && svn co https://github.com/lisaac/luci-lib-docker/tree/master/collections/luci-lib-docker
-rm -rf luci-app-dockerman/ && svn co https://github.com/lisaac/luci-app-dockerman/tree/master/applications/luci-app-dockerman
+rm -rf luci-lib-docker/ && git clone https://github.com/lisaac/luci-lib-docker/tree/master/collections/luci-lib-docker
+rm -rf luci-app-dockerman/ && git clone https://github.com/lisaac/luci-app-dockerman/tree/master/applications/luci-app-dockerman
 cd ../../
 
 
